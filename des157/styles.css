@@ -1,11 +1,16 @@
 div#container{
     width: 100%; 
     max-width: 13600px; 
-    min-width: 900px; 
+    min-width: 800px; 
 }
 
 body{
     background-color:   #4d4d4d;
+    /*
+    width: 100%; 
+    max-width: 13600px; 
+    min-width: 800px; 
+    */
 }
 
 #class_name{
