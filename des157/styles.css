@@ -1,0 +1,105 @@
+div#container{
+    width: 100%; 
+    max-width: 13600px; 
+    min-width: 900px;
+}
+
+body{
+    background-color:   #4d4d4d;
+}
+
+
+
+h1{
+    text-align: center;
+    color: #ffccd5;
+    font-family: "Snell Roundhand";
+    font-size: 57px;
+
+}
+#class_name{
+    color: #ffccd5;
+    font-size: 18px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-family: "Papyrus";
+}
+img{
+    border-radius: 50%;
+    position: fixed;
+    left: 43%;
+    top: 15%;
+}
+
+main{
+    display: flex;
+    position: absolute; 
+    top: 45%; 
+    left: 23%; 
+}
+section{
+    border-radius: 25px; 
+    background: #ffe5e5;
+    width: 220px;
+    height: 300px;
+    margin: 20px;  
+    animation-name: color_change; 
+    animation-duration: 10s; 
+    animation-iteration-count: infinite; 
+}
+@keyframes color_change{
+    0%{
+        background-color: #ffe5e5; 
+    }
+    50%{
+        background-color:#ffcccc; 
+    }
+ 
+    100%{
+        background-color: #ffe5e5;
+    }
+}
+#studios, #experiments, #writing, #rd, #final{
+    font-size: 16px; 
+    color: #404040;
+    font-family: "Papyrus";
+    text-align: center; 
+}
+a{
+    color: #404040;
+    font-size: 14px;
+    font-family: "Papyrus";
+    line-height: 1.8; 
+    list-style-type: none; 
+
+    text-align: center; 
+
+}
+a:hover{
+    color: black;
+    font-weight: bolder;
+}
+#email, #html, #css{
+    color: #ffccd5;
+    font-family: "Papyrus";
+    font-size: 14px;   
+    top: 92%; 
+}
+#email{
+    position: absolute;
+    left: 27%; 
+}
+
+#html{
+    position: absolute;
+    left: 47%;  
+}
+#css{
+    position: absolute;
+    left: 66%;  
+}
+#html:hover, #css:hover, #email:hover {
+    color: black;
+    font-weight: bolder;
+}
