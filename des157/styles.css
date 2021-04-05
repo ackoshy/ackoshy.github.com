@@ -1,22 +1,13 @@
 div#container{
     width: 100%; 
     max-width: 13600px; 
-    min-width: 900px;
+    min-width: 900px; 
 }
 
 body{
     background-color:   #4d4d4d;
 }
 
-
-
-h1{
-    text-align: center;
-    color: #ffccd5;
-    font-family: "Snell Roundhand";
-    font-size: 57px;
-
-}
 #class_name{
     color: #ffccd5;
     font-size: 18px;
@@ -25,13 +16,53 @@ h1{
     right: 10px;
     font-family: "Papyrus";
 }
-img{
-    border-radius: 50%;
-    position: fixed;
-    left: 43%;
-    top: 15%;
+
+h1{
+    text-align: center;
+    color: #ffccd5;
+    font-family: "Snell Roundhand";
+    font-size: 57px;
+
 }
 
+#banner{
+    border-radius: 25px; 
+    background: #ffe5e5;
+    width: 740px;
+    height: 150px;
+    position: absolute; 
+    top: 20%; 
+    left: 23%; 
+    margin: 20px; 
+}
+#banner_img{
+    border-radius: 50%;
+    position: absolute; 
+    left: 79%; ; 
+    top: 4%;   
+}
+#banner_h2{
+    color: #4d4d4d;
+    font-family: "Papyrus";
+    font-size: 40px;   
+    text-align: center;  
+    animation-name: color_change; 
+    animation-duration: 7s; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes color_change{
+    0%{
+        background-color: #ffe5e5; 
+    }
+    50%{
+        background-color:#ffcccc; 
+    }
+ 
+    100%{
+        background-color: #ffe5e5;
+    }
+}
 main{
     display: flex;
     position: absolute; 
@@ -44,21 +75,7 @@ section{
     width: 220px;
     height: 300px;
     margin: 20px;  
-    animation-name: color_change; 
-    animation-duration: 10s; 
-    animation-iteration-count: infinite; 
-}
-@keyframes color_change{
-    0%{
-        background-color: #ffe5e5; 
-    }
-    50%{
-        background-color:#ffcccc; 
-    }
- 
-    100%{
-        background-color: #ffe5e5;
-    }
+
 }
 #studios, #experiments, #writing, #rd, #final{
     font-size: 16px; 
@@ -72,9 +89,7 @@ a{
     font-family: "Papyrus";
     line-height: 1.8; 
     list-style-type: none; 
-
     text-align: center; 
-
 }
 a:hover{
     color: black;
@@ -90,7 +105,6 @@ a:hover{
     position: absolute;
     left: 27%; 
 }
-
 #html{
     position: absolute;
     left: 47%;  
