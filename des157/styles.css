@@ -1,10 +1,10 @@
 body {
-    background-image: linear-gradient( #333333, #f2f2f2); 
+    background-image: linear-gradient( #ff8095, #ffe6ea); 
 }
    
 h1 {
     text-align: center;
-    color: #ffccd5;
+    color: #404040;
     font-family: "Snell Roundhand";
     font-size: 57px;
 }
@@ -19,7 +19,7 @@ div#container {
 #banner {
     position: relative;
     border-radius: 25px;
-    background: #ddd;
+    background: #404040; 
     width: 1100px;
     height: 250px;
     margin: auto;
@@ -41,6 +41,8 @@ div#container {
 }
 
 
+
+
 img {
     position: absolute; 
     top: 15px; 
@@ -48,12 +50,10 @@ img {
     border-radius: 50%;
     z-index: 1; 
 }
-img:hover{
-    opacity: 0.7; 
-}
+
 
 #class_name {
-    color: #4d4d4d;
+    color: #ffccd5;
     position: relative; 
     top: 65px; 
     font-size: 22px; 
@@ -68,7 +68,7 @@ img:hover{
         background-color: #ffe5e5;
     }
     50% {
-        background-color: #ffcccc;
+        background-color: #ffb3bf;
     }
     100% {
         background-color: #ffe5e5;
@@ -82,9 +82,12 @@ main {
 
 section {
     border-radius: 25px;
-    background: #ffe5e5;
+    background-color: #ffe6ea;
+    width: 23%; 
+    /*
     width: 330px; 
     height: 290px;
+    */
     margin: 20px auto;
     padding: 15px;
     border-style: solid; 
@@ -92,7 +95,7 @@ section {
 }
 
 section:hover{
-    background: #ddd;
+    background: #ffb3bf;
 }
 
 #studios,
@@ -114,7 +117,7 @@ a {
     text-decoration: none;
 }
 
-#footer_elem:hover,a :hover {
+#banner_h2:hover, #footer_elem:hover,a :hover {
     color: black;
     font-weight: bolder;
 }
