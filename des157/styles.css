@@ -108,7 +108,7 @@ section:hover{
     font-family: "Papyrus";
 }
 
-a {
+li, a {
     color: #404040;
     font-size: 16px;
     font-family: "Papyrus";
@@ -117,7 +117,7 @@ a {
     text-decoration: none;
 }
 
-#banner_h2:hover, #footer_elem:hover,a :hover {
+#banner_h2:hover, #footer_elem:hover,li:hover, a:hover {
     color: black;
     font-weight: bolder;
 }
