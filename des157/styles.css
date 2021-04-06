@@ -24,7 +24,7 @@ div#container {
     height: 250px;
     margin: auto;
     border-style: solid; 
-    border-width: 2.5px; 
+    border-width: 3px; 
 }
 
 
@@ -56,7 +56,7 @@ img:hover{
     color: #4d4d4d;
     position: relative; 
     top: 65px; 
-    font-size: 24px; 
+    font-size: 22px; 
     font-family: "Papyrus"; 
     text-align: center; 
   
@@ -83,11 +83,16 @@ main {
 section {
     border-radius: 25px;
     background: #ffe5e5;
-    width: 23%;
+    width: 330px; 
+    height: 290px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 15px;
     border-style: solid; 
     border-width: 2.5px; 
+}
+
+section:hover{
+    background: #ddd;
 }
 
 #studios,
@@ -95,21 +100,21 @@ section {
 #writing,
 #rd,
 #final {
-    font-size: 20px;
+    font-size: 18px;
     color: #404040;
     font-family: "Papyrus";
 }
 
 a {
     color: #404040;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Papyrus";
     line-height: 1.8;
     list-style-type: none;
     text-decoration: none;
 }
 
-#footer_elem:hover, #class_name:hover,a :hover {
+#footer_elem:hover,a :hover {
     color: black;
     font-weight: bolder;
 }
