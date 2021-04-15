@@ -1,5 +1,6 @@
 body{
     background-color: #fcf9ed;
+    overflow-x: hidden;
 }
 
 div#container {
@@ -23,10 +24,6 @@ h1{
     left: 3%;  
 }
 
-h3{
-    font-size: 50px; 
-    margin-bottom: 0; 
-}
 
 h4{ 
   position: relative; 
@@ -63,9 +60,7 @@ h2{
 }
 h4{
     font-style: italic; 
-    font-weight:lighter; 
-   
-     
+    font-weight:lighter;   
 }
 
 h5{
@@ -81,7 +76,6 @@ h3{
     margin-top: 0.67em;
     margin-bottom: 0.67em; 
     font-size: 30px; 
-   
 }
 
 h6{
@@ -92,9 +86,7 @@ h6{
    letter-spacing: 1.5px; 
    margin-top: 0.3em;
    margin-bottom: 0.67em; 
-   font-size: 13px; 
-
-
+   font-size: 13px;
 }
 
 #articles{ 
@@ -120,8 +112,7 @@ footer > div {
     text-align: center;
     padding-top: 25px; 
     padding-bottom: 10px; 
- 
-  }
+}
 
 #footer_elem{
     text-decoration: none; 
