@@ -6,6 +6,7 @@ h1{
     text-align: center; 
     font-size: 80px; 
     margin-bottom: 0.5em; 
+    margin-left: 40px;  
 }
 
 div#container {
@@ -36,10 +37,10 @@ h2{
 }
 h3{
     text-align: center; 
-    font-size: 50px; 
+    font-size: 55px; 
     margin-bottom: 0; 
-
 }
+
 h4{
     text-align: center; 
     font-weight: lighter; 
@@ -94,7 +95,7 @@ section{
     margin-right: 5%;  
     column-count: 3; 
     font-family: 'Droid Serif', serif;
-    line-height: 1.5em; 
+    line-height: 1.65em; 
     font-size: 18px;
 } 
 
@@ -105,7 +106,6 @@ p{
 
 a, ul{
     color: black; 
-    text-decoration: none; 
     list-style-type: none; 
 }
 
