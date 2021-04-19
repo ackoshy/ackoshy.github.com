@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        div{
+            width: 20px; 
+            height: 20px; 
+            background-color: black; 
+            transition: 3s; 
+        }
+
+        .red{
+            width: 500px; 
+            height: 500px;
+            background-color: red; 
+            transition: all 3s; 
+        }
+        .blue{
+            width: 500px; 
+            height: 500px;
+            background-color: blue; 
+            transition: all 3s; 
+        }
+        .purple{
+            width: 500px; 
+            height: 500px;
+            background-color: purple; 
+            transition: all 3s; 
+        }
+        .pink{
+            width: 500px; 
+            height: 500px;
+            background-color: pink; 
+            transition: all 3s; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <div></div>
+    <script>
+        /*The program prompts the user to pick a color. Then, it changes the color of the square based on the color chosen. It uses the input from the prompt in the first function and passes the input to the second function which changes the color. If the user did not enter a color, the program will print an alert and then call the first function again so that the program reruns. */
+        var divTag = document.querySelector('div'); 
+        get_color(); 
+        var input; 
+        function get_color(){
+            input = prompt("Pick a color: blue, red, purple, pink")
+            return input; 
+
+        }
+        change_color(input); 
+
+        function change_color(input){
+            if(input == "blue"){
+                divTag.className="blue"; 
+            }
+            else if(input == "red"){
+                divTag.className="red"; 
+
+            }
+            else if(input=="blue"){
+                divTag.className="blue"; 
+            }
+            else if(input=="purple"){
+                divTag.className="purple"; 
+            }
+            else if(input == "pink"){
+                divTag.className="pink";
+            }
+            else{
+                alert("You did not choose a valid color :("); 
+                get_color(); 
+
+            }
+
+        }
+
+
+            
+
+    </script>
+    
+</body>
+</html>
