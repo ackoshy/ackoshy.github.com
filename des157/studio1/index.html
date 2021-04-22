@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Mab List</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Build a Mad Lib Script</h1>
+    </header>
+    <main>
+        <form id="myform">
+            <label for="noun1">Provide a Noun</label>
+            <input type="text" id="noun1">
+
+            <label for="noun2">Provide another Noun</label>
+            <input type="text" id="noun2">
+
+            <label for="adj">Provide an Adjective 
+            <input type="text" id="adj" >
+
+            <label for="verb">Provide a Verb</label>
+            <input type="text" id="verb">
+
+            <input type="submit" value="Send">
+
+        </form>
+
+        <article id="madlib"></article>
+
+        <script>
+            var myForm = document.querySelector('#myform'); 
+            var madlib = document.querySelector('#madlib'); 
+
+
+
+            myForm.addEventListener('submit', function(event){
+                event.preventDefault(); 
+                var noun1 = document.querySelector('#noun1').value; 
+                var noun2 = document.querySelector('#noun2').value; 
+                var adj = document.querySelector('#adj').value; 
+                var verb = document.querySelector('#verb').value; 
+
+                var myText; 
+
+               if(noun1 && noun2 && adj && verb){
+                    myText = `The girl's name is ${noun1}, her favorite fruit is${noun2}, she is ${adj}, and she likes to ${verb}`; 
+                }
+                else{
+                    myText = "Please give me words so I can make your Mad Lib!"
+                }
+
+                var formData = document.querySelectorAll("input[type=text"); 
+                for (var eachField of formData){
+                    eachField.value = ""; 
+                } 
+
+                madlib.innerHTML = myText;
+
+            }); 
+           
+        </script>
+    </main>
+    <footer>
+    </footer>
+
+
+    
+</body>
+</html>
