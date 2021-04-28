@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Mab List</title>
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Build a Mad Lib Script</h1>
+        <div id="banner">
+            <h1>MAD LIBS NEWS</h1>
+        </div>
     </header>
     <main>
         <form id="myform">
-            <label for="noun1">Provide a Noun</label>
+            <label for="adj1">adjective</label>
+            <input type="text" id="adj1">
+
+            <label for="noun1">your name</label>
             <input type="text" id="noun1">
 
-            <label for="noun2">Provide another Noun</label>
+            <label for="number">big number 
+            <input type="text" id="number" >
+
+            <label for="adj2">adjective</label>
+            <input type="text" id="adj2">
+
+            <label for="noun2">place</label>
             <input type="text" id="noun2">
 
-            <label for="adj">Provide an Adjective 
-            <input type="text" id="adj" >
+            <label for="noun3">social cause</label>
+            <input type="text" id="noun3">
 
-            <label for="verb">Provide a Verb</label>
-            <input type="text" id="verb">
 
-            <input type="submit" value="Send">
+            <input type="submit" value="submit">
 
         </form>
 
@@ -39,15 +49,18 @@
 
             myForm.addEventListener('submit', function(event){
                 event.preventDefault(); 
+
                 var noun1 = document.querySelector('#noun1').value; 
                 var noun2 = document.querySelector('#noun2').value; 
-                var adj = document.querySelector('#adj').value; 
-                var verb = document.querySelector('#verb').value; 
+                var noun3 = document.querySelector('#noun3').value; 
+                var adj1= document.querySelector('#adj1').value; 
+                var adj1 = document.querySelector('#adj2').value; 
+                var number = document.querySelector('#number').value;  
 
                 var myText; 
 
-               if(noun1 && noun2 && adj && verb){
-                    myText = `The girl's name is ${noun1}, her favorite fruit is${noun2}, she is ${adj}, and she likes to ${verb}`; 
+               if(noun1 && noun2 && noun3 && adj1 && adj2 && number){
+                    myText = `The girl's name is ${noun1}, her favorite fruit is${noun2}, she is ${adj1}, and she likes to ${number}`; 
                 }
                 else{
                     myText = "Please give me words so I can make your Mad Lib!"

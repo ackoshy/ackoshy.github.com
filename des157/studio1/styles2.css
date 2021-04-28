@@ -1,0 +1,33 @@
+body{
+    margin: 0; 
+    padding: 0; 
+}
+
+#pop_up{  
+    height: 70px; 
+    width: 420px; 
+    margin-top: 20px; 
+    background: #930707; 
+}
+
+#banner{
+    height: 230px; 
+    background: #0A0A70;
+}
+
+h2{
+    color: white; 
+    text-align: center;
+    font-size: 40px; 
+}
+
+section{
+    margin-top: 20px; 
+    height: 372px;
+    width: 800px; 
+    background: #930707;
+    position: absolute; 
+    right: 50px; 
+
+}
+

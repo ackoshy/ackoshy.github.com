@@ -1,0 +1,25 @@
+
+#banner{
+    height: 210px; 
+    background: #930707;  
+}
+
+h1{
+    text-align: center;
+    font-size: 80px; 
+   
+}
+body{
+    background-color: #D9F8FF; 
+}
+
+form {
+   display: flex; 
+   flex-direction: column;
+   align-items: center; 
+}
+  
+
+
+
+
