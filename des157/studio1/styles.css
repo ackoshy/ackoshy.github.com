@@ -177,10 +177,21 @@ form input:last-of-type{
     left: 20px; 
 }
 
-footer{
+#overlay_footer{
+    color: black; 
     position: absolute; 
     top: 800px; 
     left: 10px;  
     font-weight:lighter;
     padding-bottom: 10px;  
+}
+
+ footer{
+     margin-top: 10px; 
+    margin-left: 650px;  
+} 
+
+footer a{
+    text-decoration: none; 
+    color: grey; 
 }
