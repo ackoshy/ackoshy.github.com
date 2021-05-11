@@ -26,7 +26,7 @@
     
     });
 
-        document.querySelector('.close').addEventListener('click',function(event){
+        document.querySelector('.close_two').addEventListener('click',function(event){
             event.preventDefault(); 
             document.getElementById('overlay_two').className='hidden'; 
  
@@ -43,7 +43,7 @@
     
     });
 
-        document.querySelector('.close').addEventListener('click',function(event){
+        document.querySelector('.close_three').addEventListener('click',function(event){
             event.preventDefault(); 
             document.getElementById('overlay_three').className='hidden'; 
  
