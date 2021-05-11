@@ -1,0 +1,181 @@
+h1{
+    font-family: Papyrus, fantasy;
+    text-align: center; 
+    font-size: 70px; 
+}
+
+#change_font{
+    font-family: Copperplate, fantasy;
+    font-size: 100px; 
+
+}
+.flex-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.flex-container img{
+    margin: 30px; 
+    width: 400px; 
+}
+
+.hidden {
+    visibility: hidden; 
+    opacity: 0; 
+ }
+ 
+ .showing {
+     visibility: visible; 
+     opacity: 1; 
+ }
+ 
+ #overlay_one, #overlay_two, #overlay_three{
+     position: absolute; 
+     background-color: rgba(0,0,0,0.5); 
+     top: 0; 
+     left: 0; 
+     width: 100vw; 
+     height: 100vh; 
+     transition-property: opacity, visibility; 
+     transition-duration: 1s; 
+     transition-timing-function: ease; 
+ 
+ }
+
+ 
+ #overlays article{
+     box-sizing: border-box; 
+     background-color: #ffe6f0; 
+     padding: 20px; 
+     width: 50vw; 
+     height: 80vh; 
+     position: absolute; 
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%,-50%); 
+     overflow-y: scroll; 
+ }
+
+
+
+#overlays img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+#overlays h2{
+    text-align: center; 
+    font-family: Papyrus, fantasy;
+    font-size: 50px; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding: 0; 
+}
+
+#overlays h3{
+    text-align: center; 
+    font-family: Papyrus, fantasy;
+    font-size: 30px; 
+    margin-top: 0; 
+    padding: 0; 
+}
+
+#overlays p{
+    font-size: 24px; 
+    font-family: Papyrus, fantasy;
+}
+
+button{
+    border-radius: 15px; 
+    width: 120px; 
+    height: 30px; 
+    background-color: grey; 
+    color: white; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#overlay_three img{
+    width: 200px;
+}
+
+
+
+#img1:hover, #img2:hover, #img3:hover{
+    opacity: 0.5; 
+}
+
+.bottom_half{
+    display:flex; 
+}
+
+.left{
+    flex-grow: 1; 
+    width: 800px; 
+}
+ 
+.right h2{
+    text-align: center; 
+    font-size: 70px; 
+}
+
+.right section{
+    margin-top: 100px; 
+    border-radius: 15px;
+    background-color: #ffe6ea;
+    width: 600px; 
+    height: 600px; 
+    margin-right: 45px; 
+    border-style: solid; 
+    border-width: 3px; 
+}
+#collage{
+    width: 600px; 
+    margin-left: 45px; 
+}
+    
+section:hover{
+    background: #ffb3bf;
+}
+
+section h2{
+    font-family: Papyrus, fantasy;
+    margin-bottom: 0; 
+}
+
+section p{
+    font-size: 24px; 
+    margin-left: 20px; 
+    font-family: Papyrus, fantasy;
+}
+
+#logo{
+    width: 100px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+}
+footer{
+    margin-top: 10px; 
+    text-align: center; 
+} 
+
+footer a{
+   text-decoration: none; 
+   color: grey; 
+}
+
+
+
+   
