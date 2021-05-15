@@ -141,7 +141,17 @@ button{
     margin-right: 45px; 
     border-style: solid; 
     border-width: 3px; 
+    animation-name: section; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
 }
+
+@keyframes section {
+    0%   {background-color: #ffe6ea;}
+    50%  {background-color: #ffb3bf;}
+    100% {background-color:  #ffe6ea}
+}
+
 #collage{
     width: 600px; 
     margin-left: 45px; 
