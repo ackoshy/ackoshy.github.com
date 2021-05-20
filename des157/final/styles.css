@@ -23,6 +23,10 @@ a{
     color: white; 
 }
 
+a:hover{
+    color: black; 
+}
+
 section{
     background-color: #464241; 
     color: white; 
