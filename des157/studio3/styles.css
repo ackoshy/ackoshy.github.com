@@ -1,0 +1,110 @@
+
+
+body{
+    background-color: #FFDFED; 
+}
+
+h1{
+    font-family: "PT Serif";
+    font-size: 60px; 
+    margin-bottom: 0; 
+    margin-left: 700px; 
+}
+
+h2{
+    font-family: "PT Serif";
+    font-size: 24px;
+    color: #696868;
+
+}
+
+#top{
+    margin-left: 700px; 
+}
+
+.rules{
+    margin-left: 50px;  
+    background-color: white; 
+    width: 25%; 
+    /* background-color: white;  */
+}
+
+.flex-container{
+    display: flex; 
+}
+
+.left{
+    width: 25%; 
+}
+
+.middle{
+    width: 25%; 
+}
+
+.right{
+    width: 25%; 
+}
+
+.coin{
+    margin-left: 50px; 
+    width: 200px;
+    height: 200px; 
+    border: 1px solid; 
+    border-radius: 50%;
+    background-color:  #CE51FA;
+}
+
+
+.inner_coin{
+    background-color: #FFCC76;
+    width: 150px;
+    height: 150px; 
+    background-color: transparent;
+    border: 1px solid; 
+    border-radius: 50%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+}
+
+.coin h2{
+    color: black; 
+    margin-top: 40px; 
+    font-size: 20px; 
+}
+
+.flex-container h2{
+    color: black; 
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 50px; 
+}
+
+
+ #startgame{
+    width: 300px; 
+    background-color: #FFCC76; 
+
+} 
+
+button{
+    width: 147px;
+    height: 43px;
+    background-color:#FFCC76;
+
+}
+
+#p_2{
+    text-align: justify; 
+}
+
+/*  .rules{
+
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+} 
+ 
+ */
