@@ -1,9 +1,7 @@
 (function(){
     'use strict'; 
 
-    
-
-
+   /*  setting up the variables for the whole game */
     var startGame = document.getElementById('startgame');
 	        const gameControl = document.getElementById('gamecontrol');
 	        const game = document.getElementById('game');
@@ -27,17 +25,22 @@
 	        gameEnd: 29 
     }
 
+
+   /*  adding and removing buttons based on when they need to be visible or hidden */
             startGame.addEventListener("click", function(){
                 gameData.index = Math.round(Math.random());
-                 gameControl.innerHTML = '<h2>The Game Has Started</h2>'; 
-                gameControl.innerHTML +='<button id="quit">Wanna Quit?</button>'; 
+                /*  gameControl.innerHTML = '<h2 id="center">The Game Has Started</h2>';  */
+                /* gameControl.innerHTML +='<button id="quit">Wanna Quit?</button>';  */
                 document.getElementById('quit').addEventListener("click",function(){
                     location.reload(); 
                 }); 
+                document.getElementById("startgame").style.display = "none";
+                document.getElementById("quit").style.display = "block";
                 setUpTurn();  
 
              }); 
 
+             /* setting up buttons such as roll the dice to set up the turn for current player */
             function setUpTurn(){
                 console.log("in set up turn"); 
                 game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`; 
@@ -50,7 +53,7 @@
         } 
 
 
-        /* throwDice();  */
+        /* function that basically rolls the dice; takes into account each scenario such as snake eyes or rolling a one */
          function throwDice(){
             actionArea.innerHTML = ''; 
             gameData.roll1 = Math.floor(Math.random()*6)+1; 
@@ -81,7 +84,7 @@
                 gameData.p_2[gameData.index] = gameData.p_2[gameData.index]+gameData.rollSum; 
                 gameData.p_1[gameData.index] = gameData.p_1[gameData.index]+gameData.rollSum; 
                 kachingSound.play();
-                actionArea.innerHTML = '<button id="rollagain">Roll again</button> or<button id="pass">Pass</button>'; 
+                actionArea.innerHTML = '<button id="rollagain">Roll again</button>     OR     <button id="pass">Pass</button>'; 
                 document.getElementById('rollagain').addEventListener('click',function(){
                     throwDice(); 
                 }); 
@@ -94,10 +97,12 @@
             checkWinningCondition(); 
         }
 
+       /*  checks if any one player has hit 30. If they did, changes quit button to start a new game etc.
+ */
         function checkWinningCondition(){
-            showCurrentScore(); 
+           /* showCurrentScore(); */
             if(gameData.p_2[gameData.index]>gameData.gameEnd){
-                p_2.innerHTML = `<h2>${gameData.players[gameData.index]}
+                winner.innerHTML = `<h2>${gameData.players[gameData.index]}
                 wins with ${gameData.p_2[gameData.index]} points!</h2>`; 
                 actionArea.innerHTML = ''; 
                 document.getElementById('quit').innerHTML = "Start a New Game?"; 
@@ -118,6 +123,8 @@
 
            
         }
+
+       /*  displays score */
 
          function showCurrentScore(){
             console.log("incurrentscore"); 
