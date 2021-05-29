@@ -61,15 +61,17 @@ img{
     height: 200px; 
     border: 1px solid; 
     border-radius: 50%;
+}
+
+.coin{
     background-color: lightcoral;
 }
 
+
 .coin_two{
-    background-color: lightseagreen
-
-
-
+    background-color: lightseagreen; 
 }
+
 
 .inner_coin{
     background-color: #FFCC76;

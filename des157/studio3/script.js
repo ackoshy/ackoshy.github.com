@@ -30,15 +30,16 @@
             startGame.addEventListener("click", function(){
                 gameData.index = Math.round(Math.random());
                 /*  gameControl.innerHTML = '<h2 id="center">The Game Has Started</h2>';  */
-                /* gameControl.innerHTML +='<button id="quit">Wanna Quit?</button>';  */
+              /*    gameControl.innerHTML +='<button id="quit">Wanna Quit?</button>';  
                 document.getElementById('quit').addEventListener("click",function(){
                     location.reload(); 
-                }); 
-                document.getElementById("startgame").style.display = "none";
-                document.getElementById("quit").style.display = "block";
+                });  */
+                 document.getElementById("startgame").style.display = "none"; 
+               /*  document.getElementById("quit").style.display = "block";
+                console.log("HI");  */
                 setUpTurn();  
 
-             }); 
+             });  
 
              /* setting up buttons such as roll the dice to set up the turn for current player */
             function setUpTurn(){
@@ -134,4 +135,3 @@
         }   
 
 })(); 
-
