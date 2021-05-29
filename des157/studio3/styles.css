@@ -140,14 +140,46 @@ button, #startgame{
     margin-left: 50px; 
 }
 
-/*  .rules{
+#quit{
+    display: none; 
+    margin-right: 50px;
+    margin-top: 50px; 
+     
+}
 
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    left: 35%;
-} 
- 
- */
+
+
+a, ul{
+    color: black; 
+    list-style-type: none; 
+}
+
+
+footer ul {
+    position: absolute; 
+    bottom: 15px; 
+    left: 45%; 
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+
 
  

@@ -30,13 +30,12 @@
             startGame.addEventListener("click", function(){
                 gameData.index = Math.round(Math.random());
                 /*  gameControl.innerHTML = '<h2 id="center">The Game Has Started</h2>';  */
-              /*    gameControl.innerHTML +='<button id="quit">Wanna Quit?</button>';  
+                /*   gameControl.innerHTML +='<button id="quit">Wanna Quit?</button>';   */
                 document.getElementById('quit').addEventListener("click",function(){
                     location.reload(); 
-                });  */
+                });  
                  document.getElementById("startgame").style.display = "none"; 
-               /*  document.getElementById("quit").style.display = "block";
-                console.log("HI");  */
+                 document.getElementById("quit").style.display = "block";
                 setUpTurn();  
 
              });  
@@ -102,6 +101,10 @@
  */
         function checkWinningCondition(){
            /* showCurrentScore(); */
+           p_1.innerHTML = `<p>
+           ${gameData.p_1[0]}</p>`; 
+           p_2.innerHTML = `<p>
+           ${gameData.p_2[1]}</p>`; 
             if(gameData.p_2[gameData.index]>gameData.gameEnd){
                 winner.innerHTML = `<h2>${gameData.players[gameData.index]}
                 wins with ${gameData.p_2[gameData.index]} points!</h2>`; 
@@ -112,7 +115,7 @@
                 p_1.innerHTML = `<h2>${gameData.players[gameData.index]}
                 wins with ${gameData.p_1[gameData.index]} points!</h2>`; 
                 actionArea.innerHTML = ''; 
-                document.getElementById('quit').innerHTML = "Start a New Game?"; 
+                document.getElementById('startgame').innerHTML = "Start a New Game?"; 
             }
             else{
                 p_1.innerHTML = `<p>
