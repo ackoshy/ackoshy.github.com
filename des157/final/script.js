@@ -3,10 +3,11 @@ var B = 0;
 var C = 0; 
 var D = 0; 
 
-(function () {
 
+
+(function () {
     'use strict';
-  
+
 
         document.querySelector(".A").addEventListener('click',function(event){
             event.preventDefault(); 
