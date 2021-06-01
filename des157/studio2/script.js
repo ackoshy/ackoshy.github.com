@@ -2,7 +2,7 @@
 
     'use strict';
     
-        document.getElementById("img1").addEventListener('click',function(event){
+        document.querySelector(".img1").addEventListener('click',function(event){
         event.preventDefault(); 
         document.getElementById('overlay_one').className='showing'; 
     

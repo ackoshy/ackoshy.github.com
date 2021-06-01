@@ -128,7 +128,7 @@ button, #startgame{
     display: inline-block; 
 }
 
-.in_coin{
+#in_coin{
     display: inline-block; 
 }
 
@@ -146,7 +146,6 @@ button, #startgame{
     margin-top: 50px; 
      
 }
-
 
 
 a, ul{
