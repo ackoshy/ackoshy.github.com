@@ -1,63 +1,302 @@
-body{
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+main{
+    display: flex; 
+    margin: 120px; 
 }
 
 
-h1{
-    font-family: "URW Chancery L", Times, serif; 
-    font-size: 80px; 
+header img{
+    margin: 0; 
+    margin-left: 50px; 
+    margin-right: 10px; 
+    padding: 0; 
+    display: inline; 
+    margin-bottom: 0; 
+    
+}
+
+#feminist_feed{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 33px;
+    color: #E22626;
+    margin-bottom: 0; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0; 
+}
+  
+li {
+    margin-right: 50px; 
+    font-size: 16px;
+    font-weight: bold; 
+    display: inline;
+    margin-bottom: 0; 
+
+}
+
+#sign_in{
+    font-weight: normal
+}
+
+header a{
+    text-decoration: none;
+    color: black; 
+}
+
+.circle{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%; 
+    margin-top: 0; 
+    margin-left: 120px; 
+}
+
+.circle p{
+    text-align: center; 
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center; 
+}
+#author_bar{
+    margin-top: 20px; 
+    padding: 4px 0 84x 0; 
+    text-align: center; 
+    border-bottom: 1.8px solid black ; 
+    border-top: 1.8px  solid black; 
+}
+
+#author_bar h2{ 
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+#community{
+    text-decoration: underline; 
+}
+
+/*  #dot{
+    width: 8px;
+    height: 21px;
+    border-radius: 50%; 
+    display: inline; 
+} 
+ */
+date{
+    font-size: 14px;
+    color: #9E9E9E;
+    display: inline block; 
+}
+
+.left{
+    width: 60%; 
+    
+}
+
+.right{
+    width: 40%; 
+}
+
+body, header{
+    font-family: "Roboto";
+}
+
+h2{
+    margin-bottom: 0; 
+    font-size: 50px; 
+    font-weight: 800; 
+    
+}
+
+h3{
+    margin-top: 10px; 
+    margin-bottom: 0; 
+    font-size: 25px; 
+    margin-right: 80px; 
+}
+
+h4{
+    margin-top: 10px;
+    font-size: 18px; 
+    font-style: italic; 
+    font-weight: normal; 
+}
+
+
+.question{
+    width: 663px;
+    height: 118px;
+    background-color: #ff0000; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 40px; 
+    margin-bottom: 50px; 
+    line-height: 118px; 
+    margin-top: 50px; 
+}
+
+.question h3{
+    color: white; 
+    font-weight: bold; 
+    font-size: 40px; 
     text-align: center; 
 
 }
 
-p{
-    font-size: 20px; 
-    font-weight: normal; 
-}
-img{
-    width: 300px; 
-}
 
-a{
-    text-decoration: none;    
-    color: white; 
-}
 
-a:hover{
-    color: black; 
-}
-
-section{
-    background-color: #464241; 
-    color: white; 
-    font-family: "URW Chancery L", Times, serif; ; 
-    border-radius: 15px;
-    width: 500px;  
-    margin: 20px auto;
-    padding: 15px;
-    border-style: solid; 
-    border-width: 3px; 
-    padding: 30px; 
-}
-
-footer ul {
-    margin: auto;
+.A, .B, .C, .D{
+    line-height: 70px; 
+    height: 70px;
+    width: 308px;
+    background-color: #FE8BF2; 
+    font-size: 30px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    list-style-type: none;
+    margin-bottom: 30px; 
+}
+.A:hover, .B:hover, .C:hover, .D:hover{
+    opacity: 50%; 
+
 }
 
-footer li {
-    display: inline-block;
+.choice-container-one .A, .choice-container-one .B, .choice-container-one .C, .choice-container-one .D{
+    width: 300px; 
+    height: 300px; 
+    margin-bottom: 30px; 
+    margin: auto; 
+
+} 
+ 
+
+.choice-container-two .A, .choice-container-two .B, .choice-container-two .C, .choice-container-two .D{
+    background-color: #FE8BF2
+}  
+
+.choice-container-three .A{
+    background-color: lightblue; 
 }
 
-footer a {
-    color: darkgray;
-    text-decoration: none;
+.choice-container-three .B{
+    background-color: lightgreen; 
 }
 
-footer a:hover {
-    color: black;
+.choice-container-three .C{
+    background-color: lavender; 
+  
+}
+.choice-container-three .D{
+    background-color: lightpink; 
 }
 
+
+
+.choice-container-four .A, .choice-container-four .B, .choice-container-four .C, .choice-container-four .D{
+    background-color: #9542E9; 
+} 
+
+.choice-container-five .A, .choice-container-five .B, .choice-container-five .C, .choice-container-five .D{
+    background-color: lightblue; 
+} 
+
+
+.choice-container-one,
+.choice-container-two, 
+.choice-container-three,
+.choice-container-four,
+.choice-container-five
+{
+    display: flex; 
+}
+
+.choice-left, .choice-right{
+    width: 50%; 
+}
+
+
+img{
+    margin-top: 100px; 
+    margin-left: 120px; ;
+}
+.hidden{
+    display: none; 
+}
+
+.showing{
+    display: visible; 
+}
+
+#icon_rbg, #icon_malala, #icon_aoc, #icon_simone{
+    width: 664px;
+    height: 929px;
+    background-color: #ff0000;
+    padding: 20px; 
+}
+
+#icon_rbg h2, #icon_malala h2, #icon_aoc h2, #icon_simone h2
+{
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    text-align: center; 
+    margin-top: 0; 
+    margin-bottom: 30px; 
+    display: inline; 
+    
+}
+
+#icon_rbg h3, #icon_malala h3, #icon_aoc h3, #icon_simone h3
+{
+    font-style: italic;
+    font-size: 30px;
+    font-weight: normal; 
+
+}
+
+
+#box{
+    width: 569px;
+    height: 720px;
+    background-color: white; 
+    margin: auto; 
+    padding: 10px; 
+    margin-top: 30px; 
+}
+
+#box img{
+    width: 284px;
+    height: 367px;
+    
+}
+
+button{
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+    margin-bottom: 30px; 
+}
+
+button:hover{
+    background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+
+#icon_rbg .circle, #icon_malala .circle, #icon_aoc .circle, #icon_simone .circle{
+    margin:0; 
+
+}
