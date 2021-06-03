@@ -8,11 +8,10 @@ html{
     scroll-behavior: smooth; 
 }
 
-#banner{
-    width: 650px; 
-    height: 130px; 
-    background-color: maroon; 
-    margin: auto; 
+#banner img{
+    width: 700px; 
+    height: 160px; 
+   margin-left: 25%; 
 }
 
 
@@ -38,7 +37,7 @@ html{
 
 }
 
-#movies_overlay, #shopping_overlay{
+#movies_overlay, #shopping_overlay, #videos_overlay, #news_overlay{
     position: absolute; 
     background-color: rgba(0,0,0,0.5); 
     top: 0; 
@@ -65,11 +64,14 @@ article{
 
 article h2{
     font-size: 20px; 
+    margin-bottom: 5px; 
 }
 
 article li{
     font-size: 16px; 
     font-weight: normal; 
+    text-decoration: underline; 
+    margin-bottom: 10px; 
 }
 
 body{
@@ -77,7 +79,7 @@ body{
 }
 header img{
     margin: 0; 
-    margin-left: 50px; 
+    margin-left: 100px; 
     margin-right: 10px; 
     padding: 0; 
     display: inline; 
@@ -94,14 +96,17 @@ header img{
 }
 
 ul {
+    margin-left: 200px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     margin-bottom: 0; 
 }
-  
+#movies{
+    margin-left: 400px; 
+}
 .navbar {
-    margin-right: 50px; 
+    margin-right: 70px; 
     font-size: 16px;
     font-weight: bold; 
     display: inline;
@@ -162,13 +167,7 @@ header a{
     text-decoration: underline; 
 }
 
-/*  #dot{
-    width: 8px;
-    height: 21px;
-    border-radius: 50%; 
-    display: inline; 
-} 
- */
+
 date{
     font-size: 14px;
     color: #9E9E9E;
@@ -253,7 +252,7 @@ a{
 .A, .B, .C, .D{
     line-height: 70px; 
     height: 70px;
-    width: 308px;
+    width: 322px;
     background-color: #FE8BF2; 
     font-size: 30px;
     text-align: center;
@@ -340,15 +339,26 @@ img{
     padding: 20px; 
 }
 
+#icon_malala, #icon_aoc{
+    height: 889px; 
+}
+#icon_rbg{
+    height: 770px; 
+}
+
+#icon_aoc{
+    height: 830px; 
+}
+
 #icon_rbg h2, #icon_malala h2, #icon_aoc h2, #icon_simone h2
 {
     font-weight: bold;
     font-size: 40px;
     color: white; 
     margin: auto;  
-    margin-left: 80px; 
     margin-top: 0; 
     margin-bottom: 30px; 
+    margin-left: 100px; 
     display: inline; 
     
 }
@@ -371,6 +381,17 @@ img{
     margin-top: 30px; 
     border-radius: 10px; 
 }
+#icon_malala #box {
+    height: 750px; 
+}
+
+#icon_aoc #box{
+    height: 700px; 
+}
+
+#icon_rbg #box{
+    height: 620px; 
+}
 
 #box img{
     margin-top: 20px; 
@@ -378,7 +399,10 @@ img{
     
 }
 
+
+
 button{
+    margin-top: 15px; 
 	box-shadow:inset 0px 1px 0px 0px #e184f3;
 	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
 	background-color:#c123de;
@@ -401,5 +425,9 @@ button:hover{
 	background-color:#a20dbd;
 }
 
+/* #submit{
+    padding:16px 34px;
+
+} */
 
 
