@@ -2,6 +2,10 @@ var A = 0;
 var B = 0; 
 var C = 0; 
 var D = 0; 
+/* setting up variables to 0 to add 1 to every time their answer is clicked */
+
+
+/* setting up movies overlay on click changes class to showing, and changing class to hidden when user clicks close */
 
 (function () {
     'use strict';
@@ -19,6 +23,8 @@ var D = 0;
 }); 
 
 
+/* setting up shopping overlay on click changes class to showing, and changing class to hidden when user clicks close */
+
     document.getElementById("shopping").addEventListener('click',function(event){
         event.preventDefault(); 
         document.getElementById('shopping_overlay').className='showing'; 
@@ -31,6 +37,7 @@ var D = 0;
 
 }); 
 
+/* setting up news overlay on click changes class to showing, and changing class to hidden when user clicks close */
 
     document.getElementById("news").addEventListener('click',function(event){
         event.preventDefault(); 
@@ -44,6 +51,8 @@ var D = 0;
 
 }); 
 
+/* setting up videos overlay on click changes class to showing, and changing class to hidden when user clicks close */
+
 document.getElementById("videos").addEventListener('click',function(event){
     event.preventDefault(); 
     document.getElementById('videos_overlay').className='showing'; 
@@ -55,6 +64,8 @@ document.querySelector('.close_four').addEventListener('click',function(event){
     document.getElementById('videos_overlay').className='hidden'; 
 
 }); 
+
+/*when A, B,C, or D are clicked, adds 1 to the corresponding answer choice */
 
     
 
@@ -83,6 +94,9 @@ document.querySelector('.close_four').addEventListener('click',function(event){
         console.log("D"); 
     });
 
+
+   /* The rest of this code gets triggered only when one of the last answer choices from the last question is clicked */
+/*It calculates the letter that got the most clicks and displays the correct overlay accordingly*/
     document.getElementById("B_last").addEventListener("click", function(){
         console.log("HELLO"); 
         if(D>A && D>B && D>C){

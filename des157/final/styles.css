@@ -388,19 +388,19 @@ img{
     margin-top: 30px; 
     border-radius: 10px; 
 }
-#icon_malala #box {
+#icon_malala .box {
     height: 750px; 
 }
 
-#icon_aoc #box{
+#icon_aoc .box{
     height: 700px; 
 }
 
-#icon_rbg #box{
+#icon_rbg .box{
     height: 620px; 
 }
 
-#box img{
+.box img{
     margin-top: 20px; 
     width: 280px;
     
