@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;600&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <script src="script.js" defer></script>
     <title>Final</title>
@@ -14,81 +15,103 @@
 
 <body>
     <header>
+        <section id="top">
+            <div id="banner">
+    <!-- <h2>FOREVER 31</h2>
+                <h3>Get $10 off your purchase when you spend $50 or more </h3> -->
+            </div>
+        </section>
         <ul>
             <img src="images/three_bars.png" alt="Girl in a jacket" width="50" >
-            <li ><a id="feminist_feed" href="#home">FeministFeed</a></li>
-            <li><a href="#home">Quizzes</a></li>
-            <li><a href="#news">TV & Movies</a></li>
-            <li><a href="#contact">Shopping</a></li>
-            <li><a href="#about">Videos</a></li>
-            <li><a href="#about">News</a></li>
-            <li><a href="#about">Tasty</a></li>
-            <li><a  id="sign_in" href="#about">Sign In</a></li>
-            <!-- <div class="circle">
-                <p>LOL</p>
-            </div> -->
+            <li class="navbar"><a id="feminist_feed" href="#home">FeministFeed</a></li>
+            <li class="navbar"><a href="#home">Quizzes</a></li>
+            <li class="navbar"><a id="movies" href="#tv&movies">TV & Movies</a></li>
+            <li class="navbar"><a id="shopping" href="#contact">Shopping</a></li>
+            <li class="navbar"><a href="#about">Videos</a></li>
+            <li class="navbar"><a id="news" href="#about">News</a></li>
+
+            <li class="navbar"><a href="#about">Tasty</a></li>
+            
+            <li class="navbar"><a  id="sign_in" href="#about">Sign In</a></li>
+
           </ul>
-          <div class="circle">
-            <p>Quiz</p>
-        </div>
+
+          <section id="movies_overlay" class="hidden">
+            <article>
+                <h2>Top 5 Feminist Movies</h2>
+                <ul>
+                    <li>• On the Basis of Sex (2018)</li>
+                    <a class="nav_bar" href="https://www.imdb.com/title/tt4669788/">Learn More</a>
+                    <li>• Bombshell (2019)</li>
+                    <a href="https://www.imdb.com/title/tt6394270/">Learn More</a>
+                    <li>• Hidden Figures (2016)</li>
+                    <a href="https://www.imdb.com/title/tt4846340/">Learn More</a>
+                    <li>• A League of Their Own (1992) </li>
+                    <a href="https://www.imdb.com/title/tt0104694/">Learn More</a>
+                    <li>• Frida (2002) </li>
+                    <a href="https://www.imdb.com/title/tt0120679/">Learn More</a>  
+                </ul>
+                <button class="close_two">close</button>
+            </article>
+        </section> 
+
+        <section id="shopping_overlay" class="hidden">
+            <article>
+                <h2>Women-Owned Businesses You can Support</h2>
+                <ul>
+                    <li>• Inspiranza Designs</li>
+                    <a class="nav_bar" href="https://www.inspiranzadesigns.com/">Learn More</a>
+                    <li>• Francine Collections</li>
+                    <a href="https://www.francinecollections.com/">Learn More</a>
+                    <li>• Anne Cate</li>
+                    <a href="https://annecate.com/">Learn More</a>
+                    <li>• Ettitude </li>
+                    <a href="https://www.womenownedlogo.com/women-owned-business/ettitude">Learn More</a>
+                    <li>• Wholesale Boutique </li>
+                    <a href="https://www.wholesaleboutique.com/">Learn More</a>
+                    
+                    
+                </ul>
+                <button class="close_two">close</button>
+            </article>
+        </section> 
+
+        <section id="news_overlay" class="hidden">
+            <article>
+                <h2>In The News</h2>
+                <ul>
+                    <li>•Myanmar's Women Are Fighting for a New Future After a Long History of Military Oppression</li>
+                    <a href="https://time.com/6052954/myanmar-women-military/">Learn More</a>
+                    <li>• A record 41 women are Fortune 500 CEOs—and for the first time two Black women made the list</li>
+                    <a class="nav_bar" href="https://www.cnbc.com/2021/06/02/fortune-500-now-has-a-record-41-women-running-companies.html">Learn More</a>
+                    <li>• The Cartier Women’s Initiative Awards $100,000 To 8 Women Entrepreneurs</li>
+                    <a href="https://www.forbes.com/sites/anthonydemarco/2021/06/02/the-cartier-womens-initiative-awards-100000-to-8-women-entrepreneurs/?sh=5655e72f2b4e">Learn More</a>  
+                </ul>
+                <button class="close_two">close</button>
+            </article>
+        </section> 
+
+         
         <div id="author_bar">
            <h2>BREAKING NEWS: Myanmar's Women Are Fighting for a New Future After a Long History of Military Oppression
         </h2>
+        </div>
+        <div class="circle">
+            <p>Quiz</p>
         </div>
 
     </header>
     <body>
         <main>
-
             <div class="left">
                     <p id="community">Community</p>
                     <div id="dot"></div>
                     <date>Posted on May 26, 2021</date> 
   
-                
             <h2>Which Feminist Are You?</h2>
             <h3>Answer these simple questions to find out which feminist icon best describes you!</h3>
             <h4>Are you the next AOC?</h4>
-
-            <section>
-                <div class="question">
-                    <h3>
-                        Pick your favorite flower:
-                    </h3> 
-                </div>
-                <div class = "choice-container-one">
-                    <div class="choice-left">
-                        <img class = "A"src=images/yellow_flower.jpeg alt="ada.png">
-                        <img class = "B" src=images/pink_flowers.jpeg alt="ada.png">
-                        
-                    </div>
-                    <div class="choice-right">
-                        <img class = "C" src=images/golden_gate.jpeg alt="ada.png" >
-                        <img class = "D" src=images/festival.jpeg alt="ada.png">
-                    </div>
-                </div>
-               
-            </section>
-
-            <section>
-                <div class="question">
-                    <h3>
-                        Pick your birthday month:
-                    </h3> 
-                </div>
-                <div class = "choice-container-two">
-                    <div class="choice-left">
-                        <div class="A">January - March</div>
-                        <div class="B">April - June</div>
-                    </div>
-                    <div class="choice-right">
-                        <div class="C">July - September</div>
-                        <div class="D">October - December</div>
-                    </div>
-                </div>
-               
-            </section>
-            <section>
+            <section id="section1">
                 <div class="question">
                     <h3>
                         Pick your favorite color:
@@ -96,17 +119,125 @@
                 </div>
                 <div class = "choice-container-three">
                     <div class="choice-left">
-                        <div class="A"></div>
-                        <div class="B"></div>
+                        <a href="#section2">
+                            <div class="A"></div>
+                        </a>
+                        <a href="#section2">
+                            <div class="B"></div>
+                        </a>
+                       
                     </div>
                     <div class="choice-right">
-                        <div class="C"></div>
-                        <div class="D"></div>
+                        <a href="#section2">
+                            <div class="C"></div>
+                        </a>
+
+                        <a href="#section2">
+                            <div class="D"></div>
+                        </a>
+                       
+                        
+                    </div>
+                </div>
+               
+             </section>
+
+           <!--  <section>
+                <div class="question">
+                    <h3>
+                        Pick your favorite flower:
+                    </h3> 
+                </div>
+                <div class = "choice-container-one">
+                    <div class="choice-left">
+                        <a href="#section2">
+                            <img class = "A"src=images/yellow_flower.jpeg alt="ada.png">
+                        </a>
+                        <a href="#section2">
+                            <img class = "B" src=images/pink_flowers.jpeg alt="ada.png">
+                        </a>
+   
+                    </div>
+                    <div class="choice-right">
+                        <a href="#section2">
+                            <img class = "C" src=images/golden_gate.jpeg alt="ada.png" >
+                        </a>
+                        
+                        <a href="#section2">
+                            <img class = "D" src=images/festival.jpeg alt="ada.png">
+                        </a>
+                       
+                    </div>
+                </div>
+               
+            </section> --> 
+
+            <section id="section2"> 
+                <div class="question">
+                    <h3>
+                        Pick your birthday month:
+                    </h3> 
+                </div>
+
+                    <div class = "choice-container-two">
+                        <div class="choice-left">
+                            <a href="#section3">
+                                <div class="A">January - March</div>
+                            </a>
+
+                            <a href="#section3">
+                                <div class="B">April - June</div>
+                            </a> 
+                            
+                        </div>
+                        <div class="choice-right">
+                            <a href="#section3">
+                                <div class="C">July - September</div>
+                            </a>
+
+                            <a href=#section3>
+                                <div class="D">October - December</div>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+
+               
+            </section>
+
+       
+            <section id="section3">
+                <div class="question">
+                    <h3>
+                        Pick your favorite color:
+                    </h3> 
+                </div>
+                <div class = "choice-container-three">
+                    <div class="choice-left">
+                        <a href="#section4">
+                            <div class="A"></div>
+                        </a>
+                        <a href="#section4">
+                            <div class="B"></div>
+                        </a>
+                       
+                    </div>
+                    <div class="choice-right">
+                        <a href="#section4">
+                            <div class="C"></div>
+                        </a>
+
+                        <a href="#section4">
+                            <div class="D"></div>
+                        </a>
+                       
+                        
                     </div>
                 </div>
                
             </section>
-            <section>
+            <section id="section4">
                 <div class="question">
                     <h3>
                         Pick your favorite food:
@@ -114,17 +245,26 @@
                 </div>
                 <div class = "choice-container-four">
                     <div class="choice-left">
-                        <div class="A">bagels</div>
-                        <div class="B">cheese</div>
+                        <a href="#section5">
+                            <div class="A">bagels</div>
+                        </a>
+
+                        <a href="#section5">
+                            <div class="B">cheese</div>
+                        </a>               
                     </div>
                     <div class="choice-right">
-                        <div class="C">pizza</div>
-                        <div class="D">popcorn</div>
+                        <a href="#section5">
+                            <div class="C">pizza</div>
+                        </a>
+                        <a href="#section5">
+                            <div class="D">popcorn</div>
+                        </a>
                     </div>
                 </div>
                
             </section>
-            <section>
+            <section id="section5">
                 <div class="question">
                     <h3>
                         Pick your favorite TV show:
@@ -132,12 +272,18 @@
                 </div>
                 <div class = "choice-container-five">
                     <div class="choice-left">
-                        <div class="A">I Love Lucy</div>
-                        <div class="B">Versailles</div>
+                        <a class="last" href="#section6">
+                            <div class="A">I Love Lucy</div>
+                        </a> 
+
+                        <a class="last" href=#section6>
+                            <div class = "B">Versailles</div>
+                        </a>
+                       
                     </div>
                     <div class="choice-right">
                         <div class="C">The Office</div>
-                        <div class="D">Friends</div>
+                        <div class = "D">Friends</div>
                     </div>
                 </div>
                
@@ -145,9 +291,6 @@
 
             <button id="submit">submit</button>
             <section id="icon_rbg" class="hidden">
-                <!-- <div class="circle">
-                    <p>Quiz</p>
-                </div> -->
                 <h2>Which Feminist Are You?</h2>
                 <div id="box">
                     <h3>Ruth Bader Ginsburg</h3>
@@ -158,9 +301,6 @@
             </section>    
 
             <section id="icon_aoc" class="hidden">
-                <!-- <div class="circle">
-                    <p>Quiz</p>
-                </div> -->
                 <h2>Which Feminist Are You?</h2>
                 <div id="box">
                     <h3>Alexandria Ocasio Cortez  </h3>
@@ -171,9 +311,6 @@
             </section>   
 
             <section id="icon_simone" class="hidden">
-                <!-- <div class="circle">
-                    <p>Quiz</p>
-                </div> -->
                 <h2>Which Feminist Are You?</h2>
                 <div id="box">
                     <h3>Simone de Beauvoir </h3>
@@ -185,9 +322,6 @@
 
 
             <section id="icon_malala" class="hidden">
-                <!-- <div class="circle">
-                    <p>Quiz</p>
-                </div> -->
                 <h2>Which Feminist Are You?</h2>
                 <div id="box">
                     <h3>Malala Yousafzai </h3>
@@ -214,10 +348,5 @@
 </body>
 </html>
 
-<script>
-     alert("Hello! Welcome to my FeministFeed Quiz");
-    alert("Please answer all questions");
-    alert("Then click submit");
-    alert("Feel free to explore the page");
-    alert("Thank you for participating!");
-</script>
+<script src="smoothscroll.js"></script> 
+<script src="script.js"></script>

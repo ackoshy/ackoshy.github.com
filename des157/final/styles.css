@@ -1,9 +1,80 @@
 main{
     display: flex; 
-    margin: 120px; 
+    margin: 150px; 
+    margin-top: 30px; 
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+#banner{
+    width: 650px; 
+    height: 130px; 
+    background-color: maroon; 
+    margin: auto; 
 }
 
 
+#top{
+    padding: 18px; 
+    background-color: #EFF1F3; 
+    margin: 0; 
+}
+
+.nav_cirlce{
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+    margin-right: 50px; 
+    font-size: 16px;
+    font-weight: bold; 
+    display: inline;
+    margin-bottom: 0; 
+
+}
+
+#movies_overlay, #shopping_overlay{
+    position: absolute; 
+    background-color: rgba(0,0,0,0.5); 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    transition-property: opacity, visibility; 
+    transition-duration: 1s; 
+    transition-timing-function: ease; 
+}
+
+article{
+    box-sizing: border-box; 
+     background-color: #ffe6f0; 
+     padding: 20px; 
+     width: 30vw; 
+     height:40vh; 
+     position: absolute; 
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%,-50%); 
+     overflow-y: scroll;
+}
+
+article h2{
+    font-size: 20px; 
+}
+
+article li{
+    font-size: 16px; 
+    font-weight: normal; 
+}
+
+body{
+    margin: 0; 
+}
 header img{
     margin: 0; 
     margin-left: 50px; 
@@ -15,7 +86,7 @@ header img{
 }
 
 #feminist_feed{
-    font-family: Roboto;
+    font-family: Heebo;
     font-weight: bold;
     font-size: 33px;
     color: #E22626;
@@ -29,13 +100,21 @@ ul {
     margin-bottom: 0; 
 }
   
-li {
+.navbar {
     margin-right: 50px; 
     font-size: 16px;
     font-weight: bold; 
     display: inline;
     margin-bottom: 0; 
 
+}
+.learn_more{
+    display: inline; 
+}
+
+
+a:hover{
+    color: #0066ff; 
 }
 
 #sign_in{
@@ -49,34 +128,37 @@ header a{
 
 .circle{
     background-color: yellow;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 50%; 
     margin-top: 0; 
-    margin-left: 120px; 
+    margin-bottom: 0; 
+    margin-left: 150px; 
 }
 
 .circle p{
     text-align: center; 
-    font-family: Roboto;
+    font-family: Heebo;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 22px;
     text-align: center; 
+    margin-bottom: 0; 
 }
 #author_bar{
     margin-top: 20px; 
     padding: 4px 0 84x 0; 
     text-align: center; 
-    border-bottom: 1.8px solid black ; 
-    border-top: 1.8px  solid black; 
+    border-bottom: 1.8px solid lightgrey ; 
+    border-top: 1.8px solid lightgrey ; 
 }
 
 #author_bar h2{ 
-    font-size: 18px; 
+    font-size: 15px; 
     margin-bottom: 5px; 
 }
 #community{
+    margin-top: 0; 
     text-decoration: underline; 
 }
 
@@ -94,6 +176,8 @@ date{
 }
 
 .left{
+    margin: 0; 
+    padding: 0; 
     width: 60%; 
     
 }
@@ -103,7 +187,7 @@ date{
 }
 
 body, header{
-    font-family: "Roboto";
+    font-family: "Heebo";
 }
 
 h2{
@@ -143,11 +227,27 @@ h4{
 .question h3{
     color: white; 
     font-weight: bold; 
-    font-size: 40px; 
+    font-size: 32px; 
     text-align: center; 
 
 }
 
+/* .A:link, .B:link, .C:link, .D:link {
+    line-height: 70px; 
+    height: 70px;
+    width: 308px;
+    background-color: #FE8BF2; 
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px; 
+} */
+
+
+
+a{
+    text-decoration: none; 
+    color: black;
+}
 
 
 .A, .B, .C, .D{
@@ -159,7 +259,8 @@ h4{
     text-align: center;
     margin-bottom: 30px; 
 }
-.A:hover, .B:hover, .C:hover, .D:hover{
+.A:hover, .B:hover, .C:hover, .D:hover, .last:hover{
+    cursor: pointer; 
     opacity: 50%; 
 
 }
@@ -202,6 +303,7 @@ h4{
 .choice-container-five .A, .choice-container-five .B, .choice-container-five .C, .choice-container-five .D{
     background-color: lightblue; 
 } 
+ 
 
 
 .choice-container-one,
@@ -232,17 +334,19 @@ img{
 
 #icon_rbg, #icon_malala, #icon_aoc, #icon_simone{
     width: 664px;
-    height: 929px;
-    background-color: #ff0000;
+    height: 689px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 51%, rgba(252,176,69,1) 100%);
     padding: 20px; 
 }
 
 #icon_rbg h2, #icon_malala h2, #icon_aoc h2, #icon_simone h2
 {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     color: white; 
-    text-align: center; 
+    margin: auto;  
+    margin-left: 80px; 
     margin-top: 0; 
     margin-bottom: 30px; 
     display: inline; 
@@ -259,17 +363,18 @@ img{
 
 
 #box{
-    width: 569px;
-    height: 720px;
+    width: 520px;
+    height: 560px;
     background-color: white; 
     margin: auto; 
     padding: 10px; 
     margin-top: 30px; 
+    border-radius: 10px; 
 }
 
 #box img{
-    width: 284px;
-    height: 367px;
+    margin-top: 20px; 
+    width: 280px;
     
 }
 
@@ -296,7 +401,5 @@ button:hover{
 	background-color:#a20dbd;
 }
 
-#icon_rbg .circle, #icon_malala .circle, #icon_aoc .circle, #icon_simone .circle{
-    margin:0; 
 
-}
+

@@ -3,10 +3,30 @@ var B = 0;
 var C = 0; 
 var D = 0; 
 
-
-
 (function () {
     'use strict';
+
+    document.getElementById("movies").addEventListener('click',function(event){
+        event.preventDefault(); 
+        document.getElementById('movies_overlay').className='showing'; 
+    
+    });
+
+    document.getElementById("shopping").addEventListener('click',function(event){
+        event.preventDefault(); 
+        document.getElementById('shopping_overlay').className='showing'; 
+    
+    });
+
+    document.getElementById("news").addEventListener('click',function(event){
+        event.preventDefault(); 
+        document.getElementById('news_overlay').className='showing'; 
+    
+    });
+
+    
+    
+
 
 
         document.querySelector(".A").addEventListener('click',function(event){
@@ -34,9 +54,8 @@ var D = 0;
         console.log("D"); 
     });
 
-    submit.addEventListener("click", function(){
-        console.log(A); 
-
+    document.querySelector(".last").addEventListener("click", function(){
+        console.log("in last"); 
         if(D>A && D>B && D>C){
             document.getElementById('icon_aoc').className='showing'; 
         }
@@ -79,3 +98,4 @@ var D = 0;
 
 
 })();
+
