@@ -113,10 +113,15 @@ ul {
     margin-bottom: 0; 
 
 }
-.learn_more{
-    display: inline; 
+
+
+#three_bars{
+    margin-right: 0; 
 }
 
+#feminist_feed{
+    margin-left: 0;
+}
 
 a:hover{
     color: #0066ff; 
@@ -168,7 +173,7 @@ header a{
 }
 
 
-date{
+#date{
     font-size: 14px;
     color: #9E9E9E;
     display: inline block; 
@@ -333,6 +338,7 @@ img{
 
 #icon_rbg, #icon_malala, #icon_aoc, #icon_simone{
     width: 664px;
+    margin-top: 50px; 
     height: 689px;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 51%, rgba(252,176,69,1) 100%);
@@ -352,6 +358,7 @@ img{
 
 #icon_rbg h2, #icon_malala h2, #icon_aoc h2, #icon_simone h2
 {
+    
     font-weight: bold;
     font-size: 40px;
     color: white; 
@@ -372,7 +379,7 @@ img{
 }
 
 
-#box{
+.box{
     width: 520px;
     height: 560px;
     background-color: white; 
@@ -398,7 +405,6 @@ img{
     width: 280px;
     
 }
-
 
 
 button{
