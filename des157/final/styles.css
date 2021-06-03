@@ -425,9 +425,22 @@ button:hover{
 	background-color:#a20dbd;
 }
 
-/* #submit{
-    padding:16px 34px;
+footer{
+    margin-top: 10px; 
+    text-align: center; 
+} 
 
-} */
+footer ul {
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+footer a{
+   text-decoration: none; 
+   color: grey; 
+}
 
 
