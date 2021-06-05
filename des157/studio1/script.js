@@ -43,6 +43,5 @@ var madlib = document.querySelector('#madlib');
         document.getElementById('overlay').className='showing'; 
         document.getElementById('initial').className='hidden';
 
-    
     });
 })();
